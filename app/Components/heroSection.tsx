@@ -3,7 +3,53 @@ import heroImg1 from "../../public/images/hero-img.webp";
 export default function HeroSection() {
   return (
     <>
-      <div className="pt-24 px-[7.5rem] flex flex-col items-center gap-8 self-stretch">
+      <div className="pt-24 px-[7.5rem] flex flex-col items-center gap-8 self-stretch bg-img relative">
+        {/* RIGHT BACKGROUND MASK */}
+        <div className="absolute right-[-177px] top-[49px] w-[1021px] h-[625px] opacity-40 pointer-events-none -z-10">
+          <div className="flex justify-center items-center w-[845.486px] h-[845.486px]">
+            <div
+              style={{
+                WebkitMaskImage:
+                  "radial-gradient(52.19% 100% at 50% 90%, #000 0%, rgba(0, 0, 0, 0.00) 95.31%)",
+                maskImage:
+                  "radial-gradient(52.19% 100% at 50% 90%, #000 0%, rgba(0, 0, 0, 0.00) 95.31%)",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%",
+                backgroundImage: "url('/images/Content.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "1127.315px",
+                height: "845.486px",
+              }}
+            />
+          </div>
+        </div>
+
+        {/* LEFT BACKGROUND MASK */}
+        <div className="absolute left-[-177px] top-[49px] w-[1021px] h-[625px] opacity-40 pointer-events-none rotate-180 -z-10">
+          <div className="flex justify-center items-center w-[845.486px] h-[845.486px]">
+            <div
+              style={{
+                WebkitMaskImage:
+                  "radial-gradient(52.19% 100% at 50% 0%, #000 0%, rgba(0, 0, 0, 0.00) 95.31%)",
+                maskImage:
+                  "radial-gradient(52.19% 100% at 50% 0%, #000 0%, rgba(0, 0, 0, 0.00) 95.31%)",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%",
+                backgroundImage: "url('/images/Content.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                width: "1127.315px",
+                height: "845.486px",
+              }}
+            />
+          </div>
+        </div>
+
         <div className="flex justify-end flex-col items-center gap-12 self-stretch">
           <div className="flex flex-col items-center gap-6 self-stretch">
             <h2 className="text-[#fff] text-center font-mono text-[3.75rem] font-medium leading-[72px] tracking-[-0.075rem]">

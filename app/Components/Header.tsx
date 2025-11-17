@@ -16,8 +16,20 @@ export default function Header() {
   ];
 
   return (
-    <div className="rounded-[6.188rem] flex flex-col items-start gap-[0.625rem] self-stretch bg-[#202020]">
-      <div className="flex p-4 flex-col items-center gap-[0.633rem] self-stretch rounded-full bg-[#ffffff0d]">
+    <div
+      className="rounded-[6.188rem] flex flex-col items-start gap-[0.625rem] self-stretch bg-[#202020]"
+      style={{
+        boxShadow: `
+    inset 0 0 0 1px rgba(255,255,255,0.25),
+    inset 0 6px 12px rgba(255,255,255,0.10),
+    inset 0 -6px 12px rgba(255,255,255,0.08)
+  `,
+      }}
+    >
+      <div
+        className="flex p-4 flex-col items-center gap-[0.633rem] self-stretch rounded-full"
+        style={{ background: "rgba(255, 255, 255, 0.05)" }}
+      >
         <div className="flex p-0 justify-between items-center self-stretch ">
           <Image src={img1} alt="Logo" className="2xl:w-[200px] w-[150px]" />
           <nav className="md2:flex items-center lg:gap-5 gap-3 hidden">
